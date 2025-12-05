@@ -6,7 +6,6 @@
 # Explicitly keep only allowed files/directories
 !README.md
 !requirements.txt
-!main.tex
 !.gitignore
 
 # Keep directories first (must come before contents)
