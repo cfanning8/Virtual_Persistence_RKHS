@@ -1,14 +1,14 @@
 # Virtual Persistence RKHS Library
 
-Python library for reproducing kernel Hilbert space kernels and loss functions on virtual persistence diagrams.
+Python library for RKHS kernels and loss functions on virtual persistence diagrams.
 
 ## Mathematical Framework
 
 Virtual persistence diagrams are elements of the Grothendieck group $K(X,A) \cong \mathbb{Z}^{|X\setminus A|}$, represented as integer-valued vectors. The library implements:
 
-- **Heat Kernel**: Translation-invariant kernel $k_t(\alpha, \beta)$ via heat spectral multipliers on the Pontryagin dual torus
+- **Heat Kernel**: Translation-invariant kernel $k_t(\alpha, \beta)$ via heat spectral multipliers
 - **Random Fourier Features**: Feature map $\Phi_{t,R}(\alpha)$ for kernel approximation
-- **Topological Loss**: Squared RKHS distance $\|\Phi_{t,R}(\gamma)\|^2$ for VPD differences $\gamma$
+- **Topological Loss**: Squared RKHS distance $\|\Phi_{t,R}(\gamma)\|^2$ for VPD differences
 
 ## Installation
 
@@ -37,7 +37,7 @@ See `notebooks/persistent_homology/example.ipynb` for a complete example.
 - `src/loss.py`: Topological loss function
 - `src/vpd.py`: Persistence diagram to VPD vector conversion
 
-The library does not compute persistence diagrams. Use tools like [gudhi](https://gudhi.inria.fr/) for persistence computation.
+The library does not compute persistence diagrams. Use [gudhi](https://gudhi.inria.fr/) for persistence computation.
 
 ## Parameters
 
